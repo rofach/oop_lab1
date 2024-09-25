@@ -76,6 +76,12 @@ namespace Task1
 
         }
 
+        public bool IsSolvable()
+        {
+            return solutions != null;
+        }
+
+
         public double A
         {
             set { a = value; }
@@ -92,10 +98,6 @@ namespace Task1
             get { return c; }
         }
 
-        public bool IsSolvable()
-        {
-            return solutions != null;
-        }
         
         
 

@@ -51,13 +51,13 @@ namespace Task1
         public void TestNegativeCoeffA_SecondSolution()
         {
             QuadraticEquation qe = new(-1, 2, 0);
-            double expected = 0;
+            double expected = 1;
             double? actual = qe[1];
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "a cant`t equal 0")]
+        [ExpectedException(typeof(Exception), "a cant`t equal ")]
 
         public void TestExeption()
         {

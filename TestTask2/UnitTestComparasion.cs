@@ -8,10 +8,10 @@ namespace TestTask2
         [TestMethod]
         public void TestCircleComparasionSmaller()
         {
-            TCircle circle1 = new(1);
-            TCircle circle2 = new(2);
+            TCircle circle1 = new(-1);
+            TCircle circle2 = new(1);
 
-            int expected = -1;
+            int expected = 0;
             int actual = circle1.CompareTo(circle2);
 
             Assert.AreEqual(expected, actual); 

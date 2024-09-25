@@ -22,8 +22,8 @@ namespace Task1
                         qe.PrintSolutions();
                         break;
                     case 1:
-                        Console.WriteLine(qe[0] == null ? "Першого розв'язку немає" : "Перший розв'язок" + Convert.ToString(qe[0]));
-                        Console.WriteLine(qe[1] == null ? "Другого розв'язку немає" : "Другий розв'язок" + Convert.ToString(qe[1]));
+                        Console.WriteLine(qe[0] == null ? "Першого розв'язку немає" : "Перший розв'язок " + Convert.ToString(qe[0]));
+                        Console.WriteLine(qe[1] == null ? "Другого розв'язку немає" : "Другий розв'язок " + Convert.ToString(qe[1]));
                         break;
                     default:
                         Console.WriteLine("Неправлильний ввід, вивід через метод");

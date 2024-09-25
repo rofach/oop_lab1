@@ -33,6 +33,11 @@ namespace Task2
 
         public void SetRadius(double radius)
         {
+            if (radius == 0)
+            {
+                Console.WriteLine("Радіус не може бути нульовий. Встановлено за замовчуванням");
+                radius = 1;
+            }
             this.radius = radius;
         }
 
@@ -50,6 +55,16 @@ namespace Task2
             Console.WriteLine($"Радіус: {radius}\n" +
                               $"Площа:  {GetArea()}");
             
+        }
+
+        public int CompareCircles(TCircle circle1, TCircle circle2)
+        {
+            if (circle1.radius == circle2.radius)
+                return 0;
+            else if (circle1.radius > circle2.radius)
+                return 1;
+            else
+                return -1;
         }
 
         public int CompareTo(TCircle? circle)
